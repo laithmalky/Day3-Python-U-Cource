@@ -15,6 +15,35 @@ else :
     print("For sadly you cant play the Game :(") 
 
 
+
+height = int(input("What is your height in CM? "))
+bill = 0
+
+if height >= 120 : 
+    print("You can play the game :)")
+    age = int(input("Whats your age? "))
+    if age <= 12:
+        print("Child tickets are $5 USD!")
+        bill = 5
+    elif age <= 18:
+        print("Youth tickets are $7 USD!")
+        bill = 7
+    else:
+        print("Adult tickets are $12 USD!")
+        bill = 12
+
+    photo = input("Do you wanna pick a photo? Press Y for yes and N for No!")
+    if photo == "Y" or photo == "y":
+        # add 3 usd to the bill
+        bill += 3 
+    
+    print(f"Your bill is ${bill}!")
+
+else :
+    print("For sadly you cant play the Game :(") 
+
+
+
 # > bigger
 # < smaller
 # >= bigger or equail
@@ -26,7 +55,7 @@ else :
 
 # odd or even task
 
-number = int(input("enter a number!"))
+number = int(input("enter a number! "))
 
 if number % 2 == 0 :
     print("This number is even")
