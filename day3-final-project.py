@@ -23,7 +23,7 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 
 print("Welcome to Treasure Island")
 print("Your mission is to find the Treasure")
-print("You are at a cross road. where do you want to go?")
+print("You\'re at a cross road. where do you want to go?")
 direction = input('   "Right" or "Left"   \n').lower()
 
 if direction == "left":
