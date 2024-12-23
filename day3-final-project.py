@@ -21,30 +21,41 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 
-print("Welcome to Treasure Island")
-print("Your mission is to find the Treasure")
-print("You\'re at a cross road. where do you want to go?")
-direction = input('   "Right" or "Left"   \n').lower()
+
+
+print('Welcome to Treasure Island\n'
+      'Your mission is to find the Treasure')
+
+direction = input('You\'re at a cross road. where do you want to go?\n'
+                  '   "Right" or "Left"   \n').lower()
 
 if direction == "left":
-    print("You come to a lake and there is an island in the middle of the lake")
-    wait_boat = input('Type "wait" for wait the boat. Type "swim" to swim across\n').lower()
+    wait_boat = input('You come to a lake'
+                      ' there is an island in the middle of the lake\n'
+                      'Type "wait" for wait the boat.'
+                      ' Type "swim" to swim across\n').lower()
+    
     if wait_boat == "wait":
-        print("You arrive at the island unharmed. There is a house with 3 doors.")
-        door = input('One "red", one "yellow" and one "blue". Which color do you choose?\n').lower()
+        door = input('You arrive at the island unharmed.\n'
+                     ' There is a house with 3 doors.'
+                     'One "red", one "yellow" and one "blue".\n'
+                     ' Which color do you choose?\n').lower()
+        
         if door == "yellow":
             print("You found the treasure! You Win!")
         elif door == "blue":
-            print("You enter a room of beasts. Game Over.")
+            print("You enter a room of beasts. Game Over!")
         elif door == "red":
-            print("It's a room full of fire. Game Over.")
+            print("It's a room full of fire. Game Over!")
         else: 
-            print("You typed a wrong color")
+            print("You typed a wrong color. Game Over!")
+
     elif wait_boat == "swim":
         print("You get attacked by an angry trout. Game Over.")
     else:
-        print("You typed a wrong text")
+        print("You typed a wrong text. Game over!")
+
 elif direction == "right":
     print("You fell into a hole. Game Over.")
 else:
-    print("You typed a wrong text")
+    print("You typed a wrong text. Game Over!")
