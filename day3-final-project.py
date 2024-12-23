@@ -24,14 +24,14 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island")
 print("Your mission is to find the Treasure")
 print("You are at a cross road. where do you want to go?")
-direction = input("   Right or Left   \n").lower()
+direction = input('   "Right" or "Left"   \n').lower()
 
 if direction == "left":
     print("You come to a lake and there is an island in the middle of the lake")
-    wait_boat = input("Type wait for wait the boat. Type swim to swim across\n").lower()
+    wait_boat = input('Type "wait" for wait the boat. Type "swim" to swim across\n').lower()
     if wait_boat == "wait":
         print("You arrive at the island unharmed. There is a house with 3 doors.")
-        door = input("One red, one yellow and one blue. Which color do you choose?\n").lower()
+        door = input('One "red", one "yellow" and one "blue". Which color do you choose?\n').lower()
         if door == "yellow":
             print("You found the treasure! You Win!")
         elif door == "blue":
